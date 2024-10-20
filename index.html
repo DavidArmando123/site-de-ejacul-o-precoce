@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book: Você no Controle-Ejaculação Precoce</title>
+    <style>
+        body {
+            background-color: #0a1a3d; /* Azul escuro */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ebook-cover {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00BFFF; /* Azul claro */
+        }
+
+        .cta-button {
+            background-color: #00BFFF; /* Azul claro */
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        .cta-button:hover {
+            background-color: #007acc; /* Azul mais escuro ao passar o mouse */
+        }
+
+        .branding {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .faq {
+            background-color: #112a5b; /* Azul um pouco mais claro */
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .faq h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .faq-item {
+            margin-bottom: 10px;
+        }
+
+        .faq-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #00BFFF; /* Azul claro */
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-item h3:hover {
+            background-color: #007acc; /* Azul mais escuro ao passar o mouse */
+        }
+
+        .faq-item p {
+            font-size: 18px;
+            margin: 0;
+            padding: 10px;
+            display: none; /* Esconde a resposta inicialmente */
+            background-color: #1c3d71; /* Azul ainda mais claro para contraste */
+            border-radius: 5px;
+        }
+
+        /* Seção de animações */
+        .animations {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #0d2652;
+            border-radius: 10px;
+            flex-wrap: wrap;
+        }
+
+        .animation-item {
+            text-align: center;
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .animation-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        .animation-item p {
+            font-size: 16px;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .cta-button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+
+            .faq h2 {
+                font-size: 28px;
+            }
+
+            .faq-item h3 {
+                font-size: 20px;
+            }
+
+            .faq-item p {
+                font-size: 16px;
+            }
+
+            .ebook-cover {
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .cta-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .faq h2 {
+                font-size: 24px;
+            }
+
+            .faq-item h3 {
+                font-size: 18px;
+            }
+
+            .faq-item p {
+                font-size: 14px;
+            }
+
+            .ebook-cover {
+                max-width: 250px;
+            }
+
+            .animations {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nome da marca no canto superior direito -->
+    <div class="branding">ARMANDO EXPRESS</div>
+
+    <div class="container">
+        <h1>Solução para Ejaculação Precoce</h1>
+        <p>Descubra como superar a ejaculação precoce e transformar sua vida sexual com nosso guia completo e eficaz!</p>
+        <p>Este e-book foi desenvolvido e verificado por profissionais de saúde especializados, oferecendo métodos comprovados e dicas práticas que podem ajudá-lo a recuperar o controle, aumentar sua confiança e melhorar a sua relação.</p>
+
+        <!-- Espaço para a capa do e-book -->
+        <img src="Você No Controle - E-book de Ejaculação precoce (ARMANDO EXPRESS ).jpg" alt="Capa do E-book" class="ebook-cover">
+
+        <!-- Preço do e-book -->
+        <p class="price">Preço: 2500 KZ</p>
+
+        <!-- Botão de Compra -->
+        <a href="https://pay.Kuenha.com/45abdbf5-1c69-4868-bc0c-33355eca4998" class="cta-button">Compre Agora</a>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>Por que você deve comprar este e-book?</h2>
+            <div class="faq-item">
+                <h3>1. O que torna este e-book diferente?</h3>
+                <p>Este e-book foi criado com base em estudos científicos e revisado por profissionais de saúde para garantir sua eficácia.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. Quais benefícios vou ter ao seguir os conselhos?</h3>
+                <p>Você aprenderá técnicas comprovadas para melhorar sua performance sexual, ganhar mais controle e confiança.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. O conteúdo é fácil de entender?</h3>
+                <p>Sim! O conteúdo foi escrito de forma simples e direta, para que qualquer pessoa possa entender e aplicar.</p>
+            </div>
+            <div class="faq-item">
+                <h3>4. Existem garantias de resultados?</h3>
+                <p>Embora os resultados possam variar, este e-book apresenta técnicas eficazes que ajudaram muitas pessoas a superar a ejaculação precoce.</p>
+            </div>
+            <div class="faq-item">
+                <h3>5. O que acontece após a compra?</h3>
+                <p>Após a compra, você receberá o e-book diretamente em seu e-mail para leitura imediata.</p>
+            </div>
+            <div class="faq-item">
+                <h3>6. Posso confiar na qualidade do conteúdo?</h3>
+                <p>Com certeza! Todo o conteúdo foi revisado por especialistas da área de saúde para garantir sua precisão e relevância.</p>
+            </div>
+            <div class="faq-item">
+                <h3>7. É caro comparado a outras soluções?</h3>
+                <p>Não! Este e-book é uma solução acessível e eficaz, sem os altos custos de tratamentos longos ou remédios caros.</p>
+            </div>
+            <div class="faq-item">
+                <h3>8. O que fazer se eu tiver dúvidas após a compra?</h3>
+                <p>Nossa equipe de suporte estará disponível para tirar suas dúvidas e fornecer o suporte necessário.</p>
+            </div>
+        </div>
+
+        <!-- Animações temáticas -->
+        <div class="animations">
+            <div class="animation-item">
+                <img src="check-circle.png" alt="Controle sexual">
+                <p>Controle</p>
+            </div>
+            <div class="animation-item">
+                <img src="star.png" alt="Melhoria de performance">
+                <p>Recomendado</p>
+            </div>
+            <div class="animation-item">
+                <img src="globe.png" alt="Suporte dedicado">
+                <p>Suporte</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>ARMANDO EXPRESS &copy; 2024. Todos os direitos reservados.</p>
+        <p>Contato: info@armandoexpress.com | Telefone: +244 959 518 914</p>
+    </footer>
+
+</body>
+</html>
+
